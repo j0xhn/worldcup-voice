@@ -10,6 +10,8 @@
 #import <AVFoundation/AVFoundation.h>
 #import <AudioToolbox/AudioToolbox.h>
 
+#import "GADBannerView.h"
+
 AVAudioPlayer *newPlayer;
 
 @interface playStandardViewController ()
@@ -62,6 +64,27 @@ AVAudioPlayer *newPlayer;
     [goalBtn addTarget:self action:@selector(startMusic) forControlEvents:UIControlEventTouchDown];
     [goalBtn addTarget:self action:@selector(stopMusic) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:goalBtn];
+    
+    // Create a view of the standard size at the top of the screen.
+    // Available AdSize constants are explained in GADAdSize.h.
+    bannerView_ = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner];
+    [bannerView_ setFrame:CGRectMake(0.0, self.view.frame.size.height-GAD_SIZE_320x50.height, GAD_SIZE_320x50.width, GAD_SIZE_320x50.height)];
+    
+    // Specify the ad unit ID.
+    bannerView_.adUnitID = @"ca-app-pub-7160152319171038/4419989588";
+    
+    // Let the runtime know which UIViewController to restore after taking
+    // the user wherever the ad goes and add it to the view hierarchy.
+    bannerView_.rootViewController = self;
+    [self.view addSubview:bannerView_];
+    
+    // Initiate a generic request to load it with an ad.
+    [bannerView_ loadRequest:[GADRequest request]];
+
+
+    
+
+//    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:bannerView_ attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0]];
 
 }
 
