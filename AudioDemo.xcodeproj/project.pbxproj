@@ -19,6 +19,20 @@
 		F44B0C5C16DA404700E6CD88 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44B0C5A16DA404700E6CD88 /* MainStoryboard.storyboard */; };
 		F44B0C5F16DA404700E6CD88 /* makeVoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F44B0C5E16DA404700E6CD88 /* makeVoiceViewController.m */; };
 		F5DAC624194D6E6D00CBE038 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5DAC623194D6E6D00CBE038 /* AVFoundation.framework */; };
+		F5DAC627194D751E00CBE038 /* playStandardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DAC626194D751E00CBE038 /* playStandardViewController.m */; };
+		F5DAC62C194D868300CBE038 /* iPhone5_9.png in Resources */ = {isa = PBXBuildFile; fileRef = F5DAC62B194D868300CBE038 /* iPhone5_9.png */; };
+		F5DAC634194D8D5600CBE038 /* goal1.wav in Resources */ = {isa = PBXBuildFile; fileRef = F5DAC633194D8D5600CBE038 /* goal1.wav */; };
+		F5DAC63A194D936C00CBE038 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5DAC639194D936C00CBE038 /* AudioToolbox.framework */; };
+		F5DAC63D194D966B00CBE038 /* goal2.wav in Resources */ = {isa = PBXBuildFile; fileRef = F5DAC63B194D966B00CBE038 /* goal2.wav */; };
+		F5DAC63E194D966B00CBE038 /* goal3.wav in Resources */ = {isa = PBXBuildFile; fileRef = F5DAC63C194D966B00CBE038 /* goal3.wav */; };
+		F5DAC640194D9B5000CBE038 /* goal2long.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F5DAC63F194D9B5000CBE038 /* goal2long.mp3 */; };
+		F5DAC642194D9C0500CBE038 /* goal.wav in Resources */ = {isa = PBXBuildFile; fileRef = F5DAC641194D9C0500CBE038 /* goal.wav */; };
+		F5DAC654194DAC1E00CBE038 /* ronaldoNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = F5DAC64F194DAC1E00CBE038 /* ronaldoNormal.png */; };
+		F5DAC655194DAC1E00CBE038 /* ronaldoNormal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5DAC650194DAC1E00CBE038 /* ronaldoNormal@2x.png */; };
+		F5DAC656194DAC1E00CBE038 /* ronaldoScream.png in Resources */ = {isa = PBXBuildFile; fileRef = F5DAC651194DAC1E00CBE038 /* ronaldoScream.png */; };
+		F5DAC657194DAC1E00CBE038 /* ronaldoScream.psd in Resources */ = {isa = PBXBuildFile; fileRef = F5DAC652194DAC1E00CBE038 /* ronaldoScream.psd */; };
+		F5DAC658194DAC1E00CBE038 /* ronaldoScream@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5DAC653194DAC1E00CBE038 /* ronaldoScream@2x.png */; };
+		F5DAC65A194DAE6C00CBE038 /* Lobster 1.4.otf in Resources */ = {isa = PBXBuildFile; fileRef = F5DAC659194DAD1A00CBE038 /* Lobster 1.4.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +53,21 @@
 		F44B0C5D16DA404700E6CD88 /* makeVoiceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = makeVoiceViewController.h; sourceTree = "<group>"; };
 		F44B0C5E16DA404700E6CD88 /* makeVoiceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = makeVoiceViewController.m; sourceTree = "<group>"; };
 		F5DAC623194D6E6D00CBE038 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F5DAC625194D751E00CBE038 /* playStandardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = playStandardViewController.h; sourceTree = "<group>"; };
+		F5DAC626194D751E00CBE038 /* playStandardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = playStandardViewController.m; sourceTree = "<group>"; };
+		F5DAC62B194D868300CBE038 /* iPhone5_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone5_9.png; sourceTree = "<group>"; };
+		F5DAC633194D8D5600CBE038 /* goal1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = goal1.wav; sourceTree = "<group>"; };
+		F5DAC639194D936C00CBE038 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F5DAC63B194D966B00CBE038 /* goal2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = goal2.wav; sourceTree = "<group>"; };
+		F5DAC63C194D966B00CBE038 /* goal3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = goal3.wav; sourceTree = "<group>"; };
+		F5DAC63F194D9B5000CBE038 /* goal2long.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = goal2long.mp3; sourceTree = "<group>"; };
+		F5DAC641194D9C0500CBE038 /* goal.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = goal.wav; sourceTree = "<group>"; };
+		F5DAC64F194DAC1E00CBE038 /* ronaldoNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ronaldoNormal.png; sourceTree = "<group>"; };
+		F5DAC650194DAC1E00CBE038 /* ronaldoNormal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ronaldoNormal@2x.png"; sourceTree = "<group>"; };
+		F5DAC651194DAC1E00CBE038 /* ronaldoScream.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ronaldoScream.png; sourceTree = "<group>"; };
+		F5DAC652194DAC1E00CBE038 /* ronaldoScream.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = ronaldoScream.psd; sourceTree = "<group>"; };
+		F5DAC653194DAC1E00CBE038 /* ronaldoScream@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ronaldoScream@2x.png"; sourceTree = "<group>"; };
+		F5DAC659194DAD1A00CBE038 /* Lobster 1.4.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lobster 1.4.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5DAC63A194D936C00CBE038 /* AudioToolbox.framework in Frameworks */,
 				F5DAC624194D6E6D00CBE038 /* AVFoundation.framework in Frameworks */,
 				F44B0C4316DA404700E6CD88 /* UIKit.framework in Frameworks */,
 				F44B0C4516DA404700E6CD88 /* Foundation.framework in Frameworks */,
@@ -76,6 +106,7 @@
 		F44B0C4116DA404700E6CD88 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F5DAC639194D936C00CBE038 /* AudioToolbox.framework */,
 				F5DAC623194D6E6D00CBE038 /* AVFoundation.framework */,
 				F44B0C4216DA404700E6CD88 /* UIKit.framework */,
 				F44B0C4416DA404700E6CD88 /* Foundation.framework */,
@@ -89,6 +120,8 @@
 			children = (
 				F44B0C5116DA404700E6CD88 /* AppDelegate.h */,
 				F44B0C5216DA404700E6CD88 /* AppDelegate.m */,
+				F5DAC625194D751E00CBE038 /* playStandardViewController.h */,
+				F5DAC626194D751E00CBE038 /* playStandardViewController.m */,
 				F44B0C5A16DA404700E6CD88 /* MainStoryboard.storyboard */,
 				F44B0C5D16DA404700E6CD88 /* makeVoiceViewController.h */,
 				F44B0C5E16DA404700E6CD88 /* makeVoiceViewController.m */,
@@ -100,6 +133,18 @@
 		F44B0C4916DA404700E6CD88 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F5DAC659194DAD1A00CBE038 /* Lobster 1.4.otf */,
+				F5DAC64F194DAC1E00CBE038 /* ronaldoNormal.png */,
+				F5DAC650194DAC1E00CBE038 /* ronaldoNormal@2x.png */,
+				F5DAC651194DAC1E00CBE038 /* ronaldoScream.png */,
+				F5DAC652194DAC1E00CBE038 /* ronaldoScream.psd */,
+				F5DAC653194DAC1E00CBE038 /* ronaldoScream@2x.png */,
+				F5DAC641194D9C0500CBE038 /* goal.wav */,
+				F5DAC63F194D9B5000CBE038 /* goal2long.mp3 */,
+				F5DAC63B194D966B00CBE038 /* goal2.wav */,
+				F5DAC63C194D966B00CBE038 /* goal3.wav */,
+				F5DAC633194D8D5600CBE038 /* goal1.wav */,
+				F5DAC62B194D868300CBE038 /* iPhone5_9.png */,
 				F44B0C4A16DA404700E6CD88 /* AudioDemo-Info.plist */,
 				F44B0C4B16DA404700E6CD88 /* InfoPlist.strings */,
 				F44B0C4E16DA404700E6CD88 /* main.m */,
@@ -162,9 +207,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5DAC65A194DAE6C00CBE038 /* Lobster 1.4.otf in Resources */,
+				F5DAC655194DAC1E00CBE038 /* ronaldoNormal@2x.png in Resources */,
+				F5DAC640194D9B5000CBE038 /* goal2long.mp3 in Resources */,
 				F44B0C4D16DA404700E6CD88 /* InfoPlist.strings in Resources */,
+				F5DAC62C194D868300CBE038 /* iPhone5_9.png in Resources */,
+				F5DAC656194DAC1E00CBE038 /* ronaldoScream.png in Resources */,
 				F44B0C5516DA404700E6CD88 /* Default.png in Resources */,
+				F5DAC634194D8D5600CBE038 /* goal1.wav in Resources */,
+				F5DAC63D194D966B00CBE038 /* goal2.wav in Resources */,
+				F5DAC63E194D966B00CBE038 /* goal3.wav in Resources */,
+				F5DAC642194D9C0500CBE038 /* goal.wav in Resources */,
+				F5DAC654194DAC1E00CBE038 /* ronaldoNormal.png in Resources */,
+				F5DAC658194DAC1E00CBE038 /* ronaldoScream@2x.png in Resources */,
 				F44B0C5716DA404700E6CD88 /* Default@2x.png in Resources */,
+				F5DAC657194DAC1E00CBE038 /* ronaldoScream.psd in Resources */,
 				F44B0C5916DA404700E6CD88 /* Default-568h@2x.png in Resources */,
 				F44B0C5C16DA404700E6CD88 /* MainStoryboard.storyboard in Resources */,
 			);
@@ -178,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F44B0C4F16DA404700E6CD88 /* main.m in Sources */,
+				F5DAC627194D751E00CBE038 /* playStandardViewController.m in Sources */,
 				F44B0C5316DA404700E6CD88 /* AppDelegate.m in Sources */,
 				F44B0C5F16DA404700E6CD88 /* makeVoiceViewController.m in Sources */,
 			);

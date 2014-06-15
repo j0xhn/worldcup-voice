@@ -7,12 +7,19 @@
 //
 
 #import "AppDelegate.h"
+#import "playStandardViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [[UIApplication sharedApplication] setStatusBarStyle: UIStatusBarStyleLightContent];
+    playStandardViewController *viewController = [playStandardViewController new];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:viewController];
+    
+    self.window.rootViewController = nav;
+    
     return YES;
 }
 							
