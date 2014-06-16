@@ -21,11 +21,8 @@
 		F5DAC624194D6E6D00CBE038 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5DAC623194D6E6D00CBE038 /* AVFoundation.framework */; };
 		F5DAC627194D751E00CBE038 /* playStandardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DAC626194D751E00CBE038 /* playStandardViewController.m */; };
 		F5DAC62C194D868300CBE038 /* iPhone5_9.png in Resources */ = {isa = PBXBuildFile; fileRef = F5DAC62B194D868300CBE038 /* iPhone5_9.png */; };
-		F5DAC634194D8D5600CBE038 /* goal1.wav in Resources */ = {isa = PBXBuildFile; fileRef = F5DAC633194D8D5600CBE038 /* goal1.wav */; };
 		F5DAC63A194D936C00CBE038 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5DAC639194D936C00CBE038 /* AudioToolbox.framework */; };
-		F5DAC63D194D966B00CBE038 /* goal2.wav in Resources */ = {isa = PBXBuildFile; fileRef = F5DAC63B194D966B00CBE038 /* goal2.wav */; };
 		F5DAC63E194D966B00CBE038 /* goal3.wav in Resources */ = {isa = PBXBuildFile; fileRef = F5DAC63C194D966B00CBE038 /* goal3.wav */; };
-		F5DAC640194D9B5000CBE038 /* goal2long.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F5DAC63F194D9B5000CBE038 /* goal2long.mp3 */; };
 		F5DAC642194D9C0500CBE038 /* goal.wav in Resources */ = {isa = PBXBuildFile; fileRef = F5DAC641194D9C0500CBE038 /* goal.wav */; };
 		F5DAC654194DAC1E00CBE038 /* ronaldoNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = F5DAC64F194DAC1E00CBE038 /* ronaldoNormal.png */; };
 		F5DAC655194DAC1E00CBE038 /* ronaldoNormal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5DAC650194DAC1E00CBE038 /* ronaldoNormal@2x.png */; };
@@ -40,17 +37,22 @@
 		F5DAC671194E41E500CBE038 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5DAC670194E41E500CBE038 /* SystemConfiguration.framework */; };
 		F5DAC673194E41F200CBE038 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5DAC672194E41F200CBE038 /* MessageUI.framework */; };
 		F5DAC675194E494A00CBE038 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5DAC674194E494A00CBE038 /* CoreTelephony.framework */; };
+		F5DAC678194EBA8100CBE038 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F5DAC676194EBA8100CBE038 /* Icon.png */; };
+		F5DAC679194EBA8100CBE038 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5DAC677194EBA8100CBE038 /* Icon@2x.png */; };
+		F5DAC67E194EBB7B00CBE038 /* spotlight58.png in Resources */ = {isa = PBXBuildFile; fileRef = F5DAC67B194EBB7B00CBE038 /* spotlight58.png */; };
+		F5DAC67F194EBB7B00CBE038 /* spotlight80.png in Resources */ = {isa = PBXBuildFile; fileRef = F5DAC67C194EBB7B00CBE038 /* spotlight80.png */; };
+		F5DAC681194EBBC700CBE038 /* spotlight29.png in Resources */ = {isa = PBXBuildFile; fileRef = F5DAC680194EBBC700CBE038 /* spotlight29.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F44B0C3F16DA404700E6CD88 /* AudioDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F44B0C3F16DA404700E6CD88 /* World Cup Goalster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "World Cup Goalster.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F44B0C4216DA404700E6CD88 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F44B0C4416DA404700E6CD88 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F44B0C4616DA404700E6CD88 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		F44B0C4A16DA404700E6CD88 /* AudioDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AudioDemo-Info.plist"; sourceTree = "<group>"; };
+		F44B0C4A16DA404700E6CD88 /* World Cup Goalster-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "World Cup Goalster-Info.plist"; sourceTree = "<group>"; };
 		F44B0C4C16DA404700E6CD88 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F44B0C4E16DA404700E6CD88 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F44B0C5016DA404700E6CD88 /* AudioDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AudioDemo-Prefix.pch"; sourceTree = "<group>"; };
+		F44B0C5016DA404700E6CD88 /* World Cup Goalster-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "World Cup Goalster-Prefix.pch"; sourceTree = "<group>"; };
 		F44B0C5116DA404700E6CD88 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F44B0C5216DA404700E6CD88 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F44B0C5416DA404700E6CD88 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -63,11 +65,8 @@
 		F5DAC625194D751E00CBE038 /* playStandardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = playStandardViewController.h; sourceTree = "<group>"; };
 		F5DAC626194D751E00CBE038 /* playStandardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = playStandardViewController.m; sourceTree = "<group>"; };
 		F5DAC62B194D868300CBE038 /* iPhone5_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone5_9.png; sourceTree = "<group>"; };
-		F5DAC633194D8D5600CBE038 /* goal1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = goal1.wav; sourceTree = "<group>"; };
 		F5DAC639194D936C00CBE038 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		F5DAC63B194D966B00CBE038 /* goal2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = goal2.wav; sourceTree = "<group>"; };
 		F5DAC63C194D966B00CBE038 /* goal3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = goal3.wav; sourceTree = "<group>"; };
-		F5DAC63F194D9B5000CBE038 /* goal2long.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = goal2long.mp3; sourceTree = "<group>"; };
 		F5DAC641194D9C0500CBE038 /* goal.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = goal.wav; sourceTree = "<group>"; };
 		F5DAC64F194DAC1E00CBE038 /* ronaldoNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ronaldoNormal.png; sourceTree = "<group>"; };
 		F5DAC650194DAC1E00CBE038 /* ronaldoNormal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ronaldoNormal@2x.png"; sourceTree = "<group>"; };
@@ -94,6 +93,11 @@
 		F5DAC670194E41E500CBE038 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		F5DAC672194E41F200CBE038 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		F5DAC674194E494A00CBE038 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		F5DAC676194EBA8100CBE038 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = SOURCE_ROOT; };
+		F5DAC677194EBA8100CBE038 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = SOURCE_ROOT; };
+		F5DAC67B194EBB7B00CBE038 /* spotlight58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spotlight58.png; sourceTree = SOURCE_ROOT; };
+		F5DAC67C194EBB7B00CBE038 /* spotlight80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spotlight80.png; sourceTree = SOURCE_ROOT; };
+		F5DAC680194EBBC700CBE038 /* spotlight29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spotlight29.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +135,7 @@
 		F44B0C4016DA404700E6CD88 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F44B0C3F16DA404700E6CD88 /* AudioDemo.app */,
+				F44B0C3F16DA404700E6CD88 /* World Cup Goalster.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -171,6 +175,11 @@
 		F44B0C4916DA404700E6CD88 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F5DAC680194EBBC700CBE038 /* spotlight29.png */,
+				F5DAC67B194EBB7B00CBE038 /* spotlight58.png */,
+				F5DAC67C194EBB7B00CBE038 /* spotlight80.png */,
+				F5DAC676194EBA8100CBE038 /* Icon.png */,
+				F5DAC677194EBA8100CBE038 /* Icon@2x.png */,
 				F5DAC659194DAD1A00CBE038 /* Lobster 1.4.otf */,
 				F5DAC64F194DAC1E00CBE038 /* ronaldoNormal.png */,
 				F5DAC650194DAC1E00CBE038 /* ronaldoNormal@2x.png */,
@@ -178,15 +187,12 @@
 				F5DAC652194DAC1E00CBE038 /* ronaldoScream.psd */,
 				F5DAC653194DAC1E00CBE038 /* ronaldoScream@2x.png */,
 				F5DAC641194D9C0500CBE038 /* goal.wav */,
-				F5DAC63F194D9B5000CBE038 /* goal2long.mp3 */,
-				F5DAC63B194D966B00CBE038 /* goal2.wav */,
 				F5DAC63C194D966B00CBE038 /* goal3.wav */,
-				F5DAC633194D8D5600CBE038 /* goal1.wav */,
 				F5DAC62B194D868300CBE038 /* iPhone5_9.png */,
-				F44B0C4A16DA404700E6CD88 /* AudioDemo-Info.plist */,
+				F44B0C4A16DA404700E6CD88 /* World Cup Goalster-Info.plist */,
 				F44B0C4B16DA404700E6CD88 /* InfoPlist.strings */,
 				F44B0C4E16DA404700E6CD88 /* main.m */,
-				F44B0C5016DA404700E6CD88 /* AudioDemo-Prefix.pch */,
+				F44B0C5016DA404700E6CD88 /* World Cup Goalster-Prefix.pch */,
 				F44B0C5416DA404700E6CD88 /* Default.png */,
 				F44B0C5616DA404700E6CD88 /* Default@2x.png */,
 				F44B0C5816DA404700E6CD88 /* Default-568h@2x.png */,
@@ -218,9 +224,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F44B0C3E16DA404700E6CD88 /* AudioDemo */ = {
+		F44B0C3E16DA404700E6CD88 /* World Cup Goalster */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F44B0C6216DA404700E6CD88 /* Build configuration list for PBXNativeTarget "AudioDemo" */;
+			buildConfigurationList = F44B0C6216DA404700E6CD88 /* Build configuration list for PBXNativeTarget "World Cup Goalster" */;
 			buildPhases = (
 				F44B0C3B16DA404700E6CD88 /* Sources */,
 				F44B0C3C16DA404700E6CD88 /* Frameworks */,
@@ -230,9 +236,9 @@
 			);
 			dependencies = (
 			);
-			name = AudioDemo;
+			name = "World Cup Goalster";
 			productName = AudioDemo;
-			productReference = F44B0C3F16DA404700E6CD88 /* AudioDemo.app */;
+			productReference = F44B0C3F16DA404700E6CD88 /* World Cup Goalster.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -244,7 +250,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = Appcoda;
 			};
-			buildConfigurationList = F44B0C3A16DA404700E6CD88 /* Build configuration list for PBXProject "AudioDemo" */;
+			buildConfigurationList = F44B0C3A16DA404700E6CD88 /* Build configuration list for PBXProject "World Cup Goalster" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -256,7 +262,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F44B0C3E16DA404700E6CD88 /* AudioDemo */,
+				F44B0C3E16DA404700E6CD88 /* World Cup Goalster */,
 			);
 		};
 /* End PBXProject section */
@@ -266,21 +272,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5DAC67F194EBB7B00CBE038 /* spotlight80.png in Resources */,
 				F5DAC65A194DAE6C00CBE038 /* Lobster 1.4.otf in Resources */,
 				F5DAC655194DAC1E00CBE038 /* ronaldoNormal@2x.png in Resources */,
-				F5DAC640194D9B5000CBE038 /* goal2long.mp3 in Resources */,
+				F5DAC681194EBBC700CBE038 /* spotlight29.png in Resources */,
 				F44B0C4D16DA404700E6CD88 /* InfoPlist.strings in Resources */,
 				F5DAC62C194D868300CBE038 /* iPhone5_9.png in Resources */,
+				F5DAC678194EBA8100CBE038 /* Icon.png in Resources */,
 				F5DAC656194DAC1E00CBE038 /* ronaldoScream.png in Resources */,
 				F44B0C5516DA404700E6CD88 /* Default.png in Resources */,
-				F5DAC634194D8D5600CBE038 /* goal1.wav in Resources */,
-				F5DAC63D194D966B00CBE038 /* goal2.wav in Resources */,
 				F5DAC63E194D966B00CBE038 /* goal3.wav in Resources */,
 				F5DAC66A194E404C00CBE038 /* README.txt in Resources */,
 				F5DAC642194D9C0500CBE038 /* goal.wav in Resources */,
 				F5DAC654194DAC1E00CBE038 /* ronaldoNormal.png in Resources */,
 				F5DAC658194DAC1E00CBE038 /* ronaldoScream@2x.png in Resources */,
 				F44B0C5716DA404700E6CD88 /* Default@2x.png in Resources */,
+				F5DAC679194EBA8100CBE038 /* Icon@2x.png in Resources */,
+				F5DAC67E194EBB7B00CBE038 /* spotlight58.png in Resources */,
 				F5DAC657194DAC1E00CBE038 /* ronaldoScream.psd in Resources */,
 				F44B0C5916DA404700E6CD88 /* Default-568h@2x.png in Resources */,
 				F44B0C5C16DA404700E6CD88 /* MainStoryboard.storyboard in Resources */,
@@ -383,14 +391,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AudioDemo/AudioDemo-Prefix.pch";
-				INFOPLIST_FILE = "AudioDemo/AudioDemo-Info.plist";
+				GCC_PREFIX_HEADER = "AudioDemo/World Cup Goalster-Prefix.pch";
+				INFOPLIST_FILE = "AudioDemo/World Cup Goalster-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "World Cup Goalster";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -399,14 +407,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AudioDemo/AudioDemo-Prefix.pch";
-				INFOPLIST_FILE = "AudioDemo/AudioDemo-Info.plist";
+				GCC_PREFIX_HEADER = "AudioDemo/World Cup Goalster-Prefix.pch";
+				INFOPLIST_FILE = "AudioDemo/World Cup Goalster-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "World Cup Goalster";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -414,7 +422,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F44B0C3A16DA404700E6CD88 /* Build configuration list for PBXProject "AudioDemo" */ = {
+		F44B0C3A16DA404700E6CD88 /* Build configuration list for PBXProject "World Cup Goalster" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F44B0C6016DA404700E6CD88 /* Debug */,
@@ -423,7 +431,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F44B0C6216DA404700E6CD88 /* Build configuration list for PBXNativeTarget "AudioDemo" */ = {
+		F44B0C6216DA404700E6CD88 /* Build configuration list for PBXNativeTarget "World Cup Goalster" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F44B0C6316DA404700E6CD88 /* Debug */,

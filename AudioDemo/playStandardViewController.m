@@ -11,13 +11,18 @@
 #import <AudioToolbox/AudioToolbox.h>
 
 #import "GADBannerView.h"
+#import "GADInterstitial.h"
 
-AVAudioPlayer *newPlayer;
+GADInterstitial *interstitial_;
 
 @interface playStandardViewController ()
 
 @property (assign) SystemSoundID goal;
 @property (assign) SystemSoundID goal3;
+
+@property (strong,nonatomic) UIImageView *ronaldoScream;
+@property (strong,nonatomic) UIImageView *ronaldoNormal;
+@property (strong,nonatomic) NSNumber *clicks;
 
 -(UIImageView *)requestNormalImage;
 -(UIImageView *)requestScreamImage;
@@ -32,7 +37,6 @@ AVAudioPlayer *newPlayer;
     if (self) {
         // Custom initialization
         [self configureSystemSound];
-
     }
     return self;
 }
@@ -40,6 +44,8 @@ AVAudioPlayer *newPlayer;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    // load clicks from storage
+    self.clicks = [[NSUserDefaults standardUserDefaults] objectForKey:@"clicks"];
     // Do any additional setup after loading the view.
     self.navigationItem.title = @"GOAL-TASTIC!";
     self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:0.082 green:0.09 blue:0.125 alpha:1];
@@ -50,60 +56,66 @@ AVAudioPlayer *newPlayer;
                                                                       }];
 
     [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"iPhone5_9"]]];
+    
+    UIImageView *ronaldoScream = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ronaldoScream"]];
+    ronaldoScream.frame = CGRectMake((self.view.frame.size.width / 2) - (ronaldoScream.bounds.size.width / 2), (self.view.frame.size.height / 2) - (ronaldoScream.bounds.size.height / 2), ronaldoScream.bounds.size.width, ronaldoScream.bounds.size.height);
+    self.ronaldoScream = ronaldoScream;
+    
+    UIImageView *ronaldoNormal = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ronaldoNormal.png"]];
+    ronaldoNormal.frame = CGRectMake((self.view.frame.size.width / 2) - (ronaldoNormal.bounds.size.width / 2), (self.view.frame.size.height / 2) - (ronaldoNormal.bounds.size.height / 2), ronaldoNormal.bounds.size.width, ronaldoNormal.bounds.size.height);
+    self.ronaldoNormal = ronaldoNormal;
 
     [self.view addSubview:[self requestNormalImage]];
     
-    // goal button
+    // sets whole view as button
     UIButton *goalBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    goalBtn.autoresizingMask = UIViewAutoresizingFlexibleRightMargin;
-    [goalBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    UIFont *museoButtonFont500 = [UIFont fontWithName:@"Lobster 1.4" size:18.0];
-    [goalBtn setFont:museoButtonFont500];
     goalBtn.frame = CGRectMake(0.0, 0.0, self.view.bounds.size.width, self.view.bounds.size.height);
     [[goalBtn layer] setBackgroundColor:[UIColor colorWithWhite:0.0 alpha:0.0].CGColor];
     [goalBtn addTarget:self action:@selector(startMusic) forControlEvents:UIControlEventTouchDown];
     [goalBtn addTarget:self action:@selector(stopMusic) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:goalBtn];
     
+#pragma mark - Admob Ads
+    // interstitial Ad
+    interstitial_ = [[GADInterstitial alloc] init];
+    interstitial_.adUnitID = @"ca-app-pub-7160152319171038/8850189185";
+    [interstitial_ loadRequest:[GADRequest request]];
     // Create a view of the standard size at the top of the screen.
     // Available AdSize constants are explained in GADAdSize.h.
     bannerView_ = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner];
     [bannerView_ setFrame:CGRectMake(0.0, self.view.frame.size.height-GAD_SIZE_320x50.height, GAD_SIZE_320x50.width, GAD_SIZE_320x50.height)];
-    
-    // Specify the ad unit ID.
     bannerView_.adUnitID = @"ca-app-pub-7160152319171038/4419989588";
-    
     // Let the runtime know which UIViewController to restore after taking
     // the user wherever the ad goes and add it to the view hierarchy.
     bannerView_.rootViewController = self;
     [self.view addSubview:bannerView_];
-    
     // Initiate a generic request to load it with an ad.
     [bannerView_ loadRequest:[GADRequest request]];
 
-
-    
-
-//    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:bannerView_ attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0]];
-
 }
 
--(IBAction)startMusic{
-    
+-(void)startMusic{
+    // Needs to be here because gets dismissed every time it stops (see stopMusic
     NSString *goal = [[NSBundle mainBundle] pathForResource:@"goal" ofType:@"wav"];
 	NSURL *goalURL = [NSURL fileURLWithPath:goal];
 	AudioServicesCreateSystemSoundID((__bridge CFURLRef)goalURL, &_goal);
-    NSLog(@"music started");
     AudioServicesPlaySystemSound(self.goal);
-    
     [self.view addSubview:[self requestScreamImage]];
 }
 
--(IBAction)stopMusic{
+-(void)stopMusic{
     AudioServicesDisposeSystemSoundID(self.goal);
-    NSLog(@"music stoped");
-    
     [self.view addSubview:[self requestNormalImage]];
+    NSNumber *clicks = [[NSUserDefaults standardUserDefaults] objectForKey:@"clicks"];
+    int value = [clicks intValue];
+    clicks = [NSNumber numberWithInt:value + 1];
+    self.clicks = clicks;
+    NSLog(@"#ofclicks: %@", self.clicks);
+    // ad - presents modal if they've clicked 9 times
+    if ([self.clicks isEqual:@(9)]) {
+        [interstitial_ presentFromRootViewController:self];
+        self.clicks = 0;
+    }
 }
 
 - (void)configureSystemSound {
@@ -113,21 +125,17 @@ AVAudioPlayer *newPlayer;
 }
 
 -(UIImageView *)requestNormalImage{
-    
-    UIImageView *ronaldoNormal = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ronaldoNormal.png"]];
-    ronaldoNormal.frame = CGRectMake((self.view.frame.size.width / 2) - (ronaldoNormal.bounds.size.width / 2), (self.view.frame.size.height / 2) - (ronaldoNormal.bounds.size.height / 2), ronaldoNormal.bounds.size.width, ronaldoNormal.bounds.size.height);
-    
-    return ronaldoNormal;
-    
+    return self.ronaldoNormal;
 }
 
 -(UIImageView *)requestScreamImage{
-    
-    UIImageView *ronaldoScream = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ronaldoScream"]];
-    ronaldoScream.frame = CGRectMake((self.view.frame.size.width / 2) - (ronaldoScream.bounds.size.width / 2), (self.view.frame.size.height / 2) - (ronaldoScream.bounds.size.height / 2), ronaldoScream.bounds.size.width, ronaldoScream.bounds.size.height);
-    
-    return ronaldoScream;
-    
+    return self.ronaldoScream;
+}
+
+
+- (void) setClicks:(NSNumber *)clicks{
+    _clicks = clicks;
+    [[NSUserDefaults standardUserDefaults] setObject:self.clicks forKey:@"clicks"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -135,16 +143,5 @@ AVAudioPlayer *newPlayer;
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

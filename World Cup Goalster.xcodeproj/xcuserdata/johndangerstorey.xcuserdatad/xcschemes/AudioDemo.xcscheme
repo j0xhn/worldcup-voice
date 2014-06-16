@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F44B0C3E16DA404700E6CD88"
-               BuildableName = "AudioDemo.app"
-               BlueprintName = "AudioDemo"
-               ReferencedContainer = "container:AudioDemo.xcodeproj">
+               BuildableName = "World Cup Goalster.app"
+               BlueprintName = "World Cup Goalster"
+               ReferencedContainer = "container:World Cup Goalster.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F44B0C3E16DA404700E6CD88"
-            BuildableName = "AudioDemo.app"
-            BlueprintName = "AudioDemo"
-            ReferencedContainer = "container:AudioDemo.xcodeproj">
+            BuildableName = "World Cup Goalster.app"
+            BlueprintName = "World Cup Goalster"
+            ReferencedContainer = "container:World Cup Goalster.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -52,9 +52,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F44B0C3E16DA404700E6CD88"
-            BuildableName = "AudioDemo.app"
-            BlueprintName = "AudioDemo"
-            ReferencedContainer = "container:AudioDemo.xcodeproj">
+            BuildableName = "World Cup Goalster.app"
+            BlueprintName = "World Cup Goalster"
+            ReferencedContainer = "container:World Cup Goalster.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -70,9 +70,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F44B0C3E16DA404700E6CD88"
-            BuildableName = "AudioDemo.app"
-            BlueprintName = "AudioDemo"
-            ReferencedContainer = "container:AudioDemo.xcodeproj">
+            BuildableName = "World Cup Goalster.app"
+            BlueprintName = "World Cup Goalster"
+            ReferencedContainer = "container:World Cup Goalster.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
