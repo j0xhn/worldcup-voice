@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F44B0C3E16DA404700E6CD88"
                BuildableName = "World Cup Goalster.app"
-               BlueprintName = "World Cup Goalster"
-               ReferencedContainer = "container:World Cup Goalster.xcodeproj">
+               BlueprintName = "Goalster World Cup"
+               ReferencedContainer = "container:Goalster World Cup.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F44B0C3E16DA404700E6CD88"
             BuildableName = "World Cup Goalster.app"
-            BlueprintName = "World Cup Goalster"
-            ReferencedContainer = "container:World Cup Goalster.xcodeproj">
+            BlueprintName = "Goalster World Cup"
+            ReferencedContainer = "container:Goalster World Cup.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -53,8 +53,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F44B0C3E16DA404700E6CD88"
             BuildableName = "World Cup Goalster.app"
-            BlueprintName = "World Cup Goalster"
-            ReferencedContainer = "container:World Cup Goalster.xcodeproj">
+            BlueprintName = "Goalster World Cup"
+            ReferencedContainer = "container:Goalster World Cup.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -71,8 +71,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F44B0C3E16DA404700E6CD88"
             BuildableName = "World Cup Goalster.app"
-            BlueprintName = "World Cup Goalster"
-            ReferencedContainer = "container:World Cup Goalster.xcodeproj">
+            BlueprintName = "Goalster World Cup"
+            ReferencedContainer = "container:Goalster World Cup.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -76,10 +76,6 @@ GADInterstitial *interstitial_;
     [self.view addSubview:goalBtn];
     
 #pragma mark - Admob Ads
-    // interstitial Ad
-    interstitial_ = [[GADInterstitial alloc] init];
-    interstitial_.adUnitID = @"ca-app-pub-7160152319171038/8850189185";
-    [interstitial_ loadRequest:[GADRequest request]];
     // Create a view of the standard size at the top of the screen.
     // Available AdSize constants are explained in GADAdSize.h.
     bannerView_ = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner];
@@ -113,9 +109,18 @@ GADInterstitial *interstitial_;
     NSLog(@"#ofclicks: %@", self.clicks);
     // ad - presents modal if they've clicked 9 times
     if ([self.clicks isEqual:@(9)]) {
-        [interstitial_ presentFromRootViewController:self];
+        // interstitial Ad
+        interstitial_ = [[GADInterstitial alloc] init];
+        interstitial_.adUnitID = @"ca-app-pub-7160152319171038/8850189185";
+        interstitial_.delegate = self;
+        [interstitial_ loadRequest:[GADRequest request]];
         self.clicks = 0;
     }
+}
+
+- (void)interstitialDidReceiveAd:(GADInterstitial *)ad
+{
+    [interstitial_ presentFromRootViewController:self];
 }
 
 - (void)configureSystemSound {

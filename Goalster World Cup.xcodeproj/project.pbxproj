@@ -44,14 +44,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F44B0C3F16DA404700E6CD88 /* World Cup Goalster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "World Cup Goalster.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F44B0C3F16DA404700E6CD88 /* Goalster World Cup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Goalster World Cup.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F44B0C4216DA404700E6CD88 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F44B0C4416DA404700E6CD88 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F44B0C4616DA404700E6CD88 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		F44B0C4A16DA404700E6CD88 /* World Cup Goalster-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "World Cup Goalster-Info.plist"; sourceTree = "<group>"; };
+		F44B0C4A16DA404700E6CD88 /* Goalster World Cup-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Goalster World Cup-Info.plist"; sourceTree = "<group>"; };
 		F44B0C4C16DA404700E6CD88 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F44B0C4E16DA404700E6CD88 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F44B0C5016DA404700E6CD88 /* World Cup Goalster-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "World Cup Goalster-Prefix.pch"; sourceTree = "<group>"; };
+		F44B0C5016DA404700E6CD88 /* Goalster World Cup-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Goalster World Cup-Prefix.pch"; sourceTree = "<group>"; };
 		F44B0C5116DA404700E6CD88 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F44B0C5216DA404700E6CD88 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F44B0C5416DA404700E6CD88 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -132,7 +132,7 @@
 		F44B0C4016DA404700E6CD88 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F44B0C3F16DA404700E6CD88 /* World Cup Goalster.app */,
+				F44B0C3F16DA404700E6CD88 /* Goalster World Cup.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -184,10 +184,10 @@
 				F5DAC641194D9C0500CBE038 /* goal.wav */,
 				F5DAC63C194D966B00CBE038 /* goal3.wav */,
 				F5DAC62B194D868300CBE038 /* iPhone5_9.png */,
-				F44B0C4A16DA404700E6CD88 /* World Cup Goalster-Info.plist */,
+				F44B0C4A16DA404700E6CD88 /* Goalster World Cup-Info.plist */,
 				F44B0C4B16DA404700E6CD88 /* InfoPlist.strings */,
 				F44B0C4E16DA404700E6CD88 /* main.m */,
-				F44B0C5016DA404700E6CD88 /* World Cup Goalster-Prefix.pch */,
+				F44B0C5016DA404700E6CD88 /* Goalster World Cup-Prefix.pch */,
 				F44B0C5416DA404700E6CD88 /* Default.png */,
 				F44B0C5616DA404700E6CD88 /* Default@2x.png */,
 				F44B0C5816DA404700E6CD88 /* Default-568h@2x.png */,
@@ -219,9 +219,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F44B0C3E16DA404700E6CD88 /* World Cup Goalster */ = {
+		F44B0C3E16DA404700E6CD88 /* Goalster World Cup */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F44B0C6216DA404700E6CD88 /* Build configuration list for PBXNativeTarget "World Cup Goalster" */;
+			buildConfigurationList = F44B0C6216DA404700E6CD88 /* Build configuration list for PBXNativeTarget "Goalster World Cup" */;
 			buildPhases = (
 				F44B0C3B16DA404700E6CD88 /* Sources */,
 				F44B0C3C16DA404700E6CD88 /* Frameworks */,
@@ -231,9 +231,9 @@
 			);
 			dependencies = (
 			);
-			name = "World Cup Goalster";
+			name = "Goalster World Cup";
 			productName = AudioDemo;
-			productReference = F44B0C3F16DA404700E6CD88 /* World Cup Goalster.app */;
+			productReference = F44B0C3F16DA404700E6CD88 /* Goalster World Cup.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -244,8 +244,13 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = Appcoda;
+				TargetAttributes = {
+					F44B0C3E16DA404700E6CD88 = {
+						DevelopmentTeam = 84RXJ2GY5R;
+					};
+				};
 			};
-			buildConfigurationList = F44B0C3A16DA404700E6CD88 /* Build configuration list for PBXProject "World Cup Goalster" */;
+			buildConfigurationList = F44B0C3A16DA404700E6CD88 /* Build configuration list for PBXProject "Goalster World Cup" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -257,7 +262,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F44B0C3E16DA404700E6CD88 /* World Cup Goalster */,
+				F44B0C3E16DA404700E6CD88 /* Goalster World Cup */,
 			);
 		};
 /* End PBXProject section */
@@ -384,15 +389,18 @@
 		F44B0C6316DA404700E6CD88 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AudioDemo/World Cup Goalster-Prefix.pch";
-				INFOPLIST_FILE = "AudioDemo/World Cup Goalster-Info.plist";
+				GCC_PREFIX_HEADER = "AudioDemo/Goalster World Cup-Prefix.pch";
+				INFOPLIST_FILE = "AudioDemo/Goalster World Cup-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "World Cup Goalster";
+				PRODUCT_NAME = "Goalster World Cup";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -400,15 +408,18 @@
 		F44B0C6416DA404700E6CD88 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AudioDemo/World Cup Goalster-Prefix.pch";
-				INFOPLIST_FILE = "AudioDemo/World Cup Goalster-Info.plist";
+				GCC_PREFIX_HEADER = "AudioDemo/Goalster World Cup-Prefix.pch";
+				INFOPLIST_FILE = "AudioDemo/Goalster World Cup-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "World Cup Goalster";
+				PRODUCT_NAME = "Goalster World Cup";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -416,7 +427,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F44B0C3A16DA404700E6CD88 /* Build configuration list for PBXProject "World Cup Goalster" */ = {
+		F44B0C3A16DA404700E6CD88 /* Build configuration list for PBXProject "Goalster World Cup" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F44B0C6016DA404700E6CD88 /* Debug */,
@@ -425,7 +436,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F44B0C6216DA404700E6CD88 /* Build configuration list for PBXNativeTarget "World Cup Goalster" */ = {
+		F44B0C6216DA404700E6CD88 /* Build configuration list for PBXNativeTarget "Goalster World Cup" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F44B0C6316DA404700E6CD88 /* Debug */,

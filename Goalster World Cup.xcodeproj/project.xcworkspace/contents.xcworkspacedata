@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:World Cup Goalster.xcodeproj">
+      location = "self:Goalster World Cup.xcodeproj">
    </FileRef>
 </Workspace>
